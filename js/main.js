@@ -45,16 +45,21 @@ tl.from('.img-9', 4, {
     ease: "power4.out",
     opacity: 0
 }, '>-1')
-tl.from('.header__top', 1, {
+tl.fromTo('.header__top', 1, {
     y: -60
+},
+{
+  y: 0
 }, '>-5')
-tl.from('.header__content', 2, {
+tl.to('.header__content', 2, {
     ease: "power4.out",
-    y: 20,
-    opacity: 0
+    y: 0,
+    opacity: 1
 }, '>-0.5')
 
 const titles = gsap.utils.toArray('.title')
+const advantagesItem = gsap.utils.toArray('.advantages__item')
+const questionsFormItem = gsap.utils.toArray('.questions__form-item')
 
 if(ScrollTrigger.isTouch !== 1){
     ScrollSmoother.create({
@@ -99,14 +104,12 @@ if(ScrollTrigger.isTouch !== 1){
       scrub: true
     }
   })
-console.log(titles);
   titles.forEach(t=>{
     gsap.from(t,{
         x: -40,
         opacity: 0,
         scrollTrigger:{
             trigger: t,
-            end: 650,
             scrub: true
           }
       })
@@ -143,5 +146,29 @@ console.log(titles);
         end: 1000,
         scrub: true
       }
+  })
+  advantagesItem.forEach(i=>{
+    gsap.from(i,{
+      y: 40,
+      opacity: 0,
+      scrollTrigger:{
+          trigger: i,
+          end: 1500,
+          scrub: true
+        }
+    })
+  })
+ 
+  questionsFormItem.forEach(i=>{
+    gsap.from(i,{
+      y: 40,
+      scale: .9,
+      opacity: 0,
+      scrollTrigger:{
+          trigger: i,
+          end: 1800,
+          scrub: true
+        }
+    })
   })
 }

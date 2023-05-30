@@ -10,7 +10,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     background-color: #020413;
-    
 }
 
 a{
@@ -30,6 +29,17 @@ ul{
 img{
     pointer-events: none;
 }
+
+body::-webkit-scrollbar {
+    width: 8px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #020413;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #1C2892;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+  }
 
 .title{
     font-family: 'Montserrat';
@@ -51,7 +61,7 @@ img{
 .container{
     max-width: 1210px;
     width: 100%;
-    padding: 30px 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -71,14 +81,14 @@ img{
 
 .img-2{
     position: absolute;
-    left: 0;
+    left: -5px;
     bottom: 180px;
     z-index: 5;
 }
 
 .img-3{
     position: absolute;
-    right: 0;
+    right: -6px;
     bottom: 180px;
     z-index: 5;
 }
@@ -127,11 +137,17 @@ img{
 }
 
 .header__top{
+    padding: 35px 0;
     position: relative;
     z-index: 7;
     display: flex;
     justify-content: center;
     gap: 150px;
+    transform: translateY(-60px);
+}
+
+.logo{
+    width: 43px;
 }
 
 .nav__list{
@@ -148,7 +164,7 @@ img{
     gap: 150px;
 }
 
-.header__tel{
+.tel{
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
@@ -170,6 +186,9 @@ img{
 
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50px;
+
+    transform: translateY(20px);
+    opacity: 0;
 }
 
 .header__text{
@@ -182,7 +201,7 @@ img{
 
 .main{
     background: #020413;
-    padding: 35px 0;
+    padding: 35px 0 0;
 }
 
 .about__title{
@@ -230,7 +249,7 @@ img{
 }
 
 .tours{
-    padding: 80px 0;
+    padding: 80px 0 0;
 }
 
 .tours__title{
@@ -274,4 +293,144 @@ img{
     line-height: 18px;
     color: #FFFFFF;
     text-align: center;
+}
+
+.advantages{
+    padding: 80px 0 0;
+}
+
+.advantages__title{
+    margin-bottom: 40px;
+}
+
+.advantages__list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.advantages__item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.advantages__item-title{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #1C2892;
+}
+
+.advantages__item-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.questions{
+    padding: 80px 0 35px;
+    background-image: url(../img/fire-2.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+}
+
+.questions__title{
+    margin-bottom: 40px;
+}
+
+.questions__form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 580px;
+}
+
+.questions__input{
+    padding: 20px 40px;
+    height: 55px;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    background: transparent;
+    color: #fff;
+}
+
+.questions__input::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.questions__btn{
+    width: 100%;
+    height: 55px;
+    background: #1C2892;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.footer{
+    padding: 50px 0;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer__tel-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__nav-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+}
+
+.footer__item-right{
+    align-items: flex-end;
+}
+
+.footer__soials{
+    display: flex;
+    gap: 25px;
+}
+
+.footer__btn{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/btn-arrow.svg);
 }
