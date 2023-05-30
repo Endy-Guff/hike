@@ -1,0 +1,277 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: #020413;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    pointer-events: none;
+}
+
+.title{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.container{
+    max-width: 1210px;
+    width: 100%;
+    padding: 30px 15px;
+    margin: 0 auto;
+}
+
+.header{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(180deg, #373A66 0%, #CC6B62 60.67%);
+    overflow: hidden;
+}
+
+.img-1{
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    z-index: 3;
+}
+
+.img-2{
+    position: absolute;
+    left: 0;
+    bottom: 180px;
+    z-index: 5;
+}
+
+.img-3{
+    position: absolute;
+    right: 0;
+    bottom: 180px;
+    z-index: 5;
+}
+
+.img-4{
+    position: absolute;
+    left: 25%;
+    bottom: 130px;
+    /* margin-left: -438.25px; */
+    z-index: 2;
+}
+
+.img-5{
+    position: absolute;
+    left: 20px;
+    bottom: 130px;
+    z-index: 6;
+}
+
+.img-6{
+    position: absolute;
+    z-index: 6;
+    bottom: 100px;
+    right: 450px;
+}
+
+.img-7{
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    z-index: 6;
+}
+
+.img-8{
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    z-index: 6;
+}
+
+.img-9{
+    position: absolute;
+    left: 50%;
+    margin-left: -332px;
+    top: 10px;
+}
+
+.header__top{
+    position: relative;
+    z-index: 7;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.nav__list{
+    list-style-type: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.nav__list{
+    display: flex;
+    gap: 150px;
+}
+
+.header__tel{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.header__content{
+    width: 370px;
+    height: 60px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -185px;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+}
+
+.header__text{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.main{
+    background: #020413;
+    padding: 35px 0;
+}
+
+.about__title{
+    margin-bottom: 40px;
+}
+
+.about__text-box{
+    overflow: hidden;
+    margin-bottom: 110px;
+}
+
+.about__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item-subtitle{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #1C2892;
+
+    position: absolute;
+    z-index: 1;
+    bottom: -6px;
+}
+
+.about__item-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+
+    margin-left: 35px;
+    position: relative;
+    z-index: 2;
+}
+
+.about__item{
+    position: relative;
+}
+
+.tours{
+    padding: 80px 0;
+}
+
+.tours__title{
+    margin-bottom: 40px;
+}
+
+.tours__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tours__item{
+    padding: 50px;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(50% 50% at 50% 50%, #1C2892 0%, rgba(28, 40, 146, 0) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tours__item-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tours__item-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
